@@ -1,5 +1,5 @@
 # portfolio
-Portfolio de projetos de dados campartilháveis desenvolvidos por mim.
+Portfolio de projetos de dados campartilháveis
 
 1: Painel de monitoramento da Plataforma Alagoas+Digital: 
 https://app.powerbi.com/view?r=eyJrIjoiNWQ3NTViNTYtZTdmOS00MmZjLWFlMGQtZTg1NWZkMjQ1Njg1IiwidCI6ImNlMTdiNDVkLThmYjctNGYwMy05ZjRlLTYxMTBkMTAzZGI3NiJ9
