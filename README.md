@@ -16,4 +16,4 @@ https://cria.al.gov.br/painel
 4: Modelo preditivo de inadimplência para Programa de Crédito: 
 Link público de visualização [DataVIZ] [https://www.canva.com/design/DAGjg95knM4/1JIgxvCA-rN30RFoxrqw-A/view?utm_content=DAGjg95knM4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1dd637ab44]
 
-  4.1: 
+  4.1: Mapa disponível em: https://guipavieira.github.io/portfolio/
