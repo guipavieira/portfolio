@@ -15,11 +15,8 @@ Link público de visualização [DataVIZ] [https://www.canva.com/design/DAGjg95k
 4: Painel de monitoramento da Plataforma Alagoas+Digital: 
 https://app.powerbi.com/view?r=eyJrIjoiNWQ3NTViNTYtZTdmOS00MmZjLWFlMGQtZTg1NWZkMjQ1Njg1IiwidCI6ImNlMTdiNDVkLThmYjctNGYwMy05ZjRlLTYxMTBkMTAzZGI3NiJ9
 
-5: Painel de monitoramento do Programa Criança Alagoana (Destaque no XI Congresso Consad de Gestão Pública):
-https://cria.al.gov.br/painel
-
-6: Painel de monitoramento de uso do SEI Alagoas
+5: Painel de monitoramento de uso do SEI Alagoas
 [dados pessoais não compartilháveis]
 
-7: Simulador de cenários (Fundo de Aval)
+6: Simulador de cenários (Fundo de Aval)
 https://docs.google.com/spreadsheets/d/1RYrAv2SUd_Rxp3kw9pbASlXrW3uLeH_sbkb95ZlH_4s/edit?usp=sharing
