@@ -20,3 +20,6 @@ https://cria.al.gov.br/painel
 
 6: Painel de monitoramento de uso do SEI Alagoas
 [dados pessoais não compartilháveis]
+
+7: Simulador de cenários (Fundo de Aval)
+https://docs.google.com/spreadsheets/d/1RYrAv2SUd_Rxp3kw9pbASlXrW3uLeH_sbkb95ZlH_4s/edit?usp=sharing
