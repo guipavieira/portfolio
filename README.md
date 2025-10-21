@@ -3,6 +3,7 @@ Portfolio de projetos com dados campartilháveis
 
 1: Variações educacionais nos estados com base nos dados dos eleitores brasileiros:
 Artigo científico: https://drive.google.com/file/d/1moWeA-IablU3J1HV7iwuuMfqjC8YxToC/view?usp=sharing
+Código em R: https://github.com/guipavieira/portfolio/blob/main/Estudo%20de%20Varia%C3%A7%C3%B5es%20educacionais%20UFs_2014-2024.R
 
 2: Artigo científico Programa Criança Alagoana:
     https://www.researchgate.net/publication/365276270_Uma_solucao_de_relacionamento_digital_para_a_primeira_infancia_a_experiencia_do_Zap_do_CRIA
@@ -20,3 +21,6 @@ https://app.powerbi.com/view?r=eyJrIjoiNWQ3NTViNTYtZTdmOS00MmZjLWFlMGQtZTg1NWZkM
 
 6: Simulador de cenários (Fundo de Aval)
 https://docs.google.com/spreadsheets/d/1RYrAv2SUd_Rxp3kw9pbASlXrW3uLeH_sbkb95ZlH_4s/edit?usp=sharing
+
+7: Automação para disparos de e-mail em programa de educação financeira:
+Código Apps Script
