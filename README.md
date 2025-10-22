@@ -23,4 +23,4 @@ https://app.powerbi.com/view?r=eyJrIjoiNWQ3NTViNTYtZTdmOS00MmZjLWFlMGQtZTg1NWZkM
 https://docs.google.com/spreadsheets/d/1RYrAv2SUd_Rxp3kw9pbASlXrW3uLeH_sbkb95ZlH_4s/edit?usp=sharing
 
 7: Automação para disparos de e-mail em programa de educação financeira:
-Código Apps Script = "Disparos App Script"
+Código Apps Script = "Disparos Google Planilhas"
