@@ -1,0 +1,68 @@
+## CÓDIGO PARA DISPARO DE EMAILS UTILIZANDO GOOGLE PLANILHAS
+
+
+function enviarEmailsDeVerdade() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0]; // Primeira aba
+  var data = sheet.getDataRange().getValues();
+  var headers = data[0];
+
+  var nomeIndex = headers.indexOf("Usuário - Nome");
+  var emailIndex = headers.indexOf("Usuário - Email");
+  var dataRealizacaoIndex = headers.indexOf("Data realizaçao"); // <- com ç e sem til
+  var horarioIndex = headers.indexOf("Horário");
+  var enderecoIndex = headers.indexOf("Endereço");
+  var enviadoIndex = headers.indexOf("Enviado");
+
+  if (enviadoIndex === -1) {
+    sheet.getRange(1, headers.length + 1).setValue("Enviado");
+    enviadoIndex = headers.length;
+  }
+
+  var enviadosHoje = 0;
+
+  for (var i = 1; i < data.length; i++) {
+    var nome = data[i][nomeIndex];
+    var email = data[i][emailIndex];
+    var dataRealizacao = data[i][dataRealizacaoIndex];
+    var horario = data[i][horarioIndex];
+    var endereco = data[i][enderecoIndex];
+    var jaEnviado = data[i][enviadoIndex];
+
+    if (email && jaEnviado !== "SIM") {
+      var mensagem = `
+        Olá, ${nome}!<br><br>
+        Tudo bem com você?<br><br>
+        Você se inscreveu na <strong>Academia de Finanças</strong> este ano e, por isso, lhe convidamos novamente!<br>
+        A próxima edição já está com as inscrições abertas:<br><br>
+        📅 <strong>Data:</strong> ${dataRealizacao}<br>
+        🕒 <strong>Horário:</strong> ${horario}<br>
+        📍 <strong>Local:</strong> ${endereco}<br><br>
+
+        <strong>Para se inscrever:</strong><br>
+        1️⃣ Acesse o portal: <a href="https://app.adesampa.com.br">app.adesampa.com.br</a><br>
+        2️⃣ No menu, filtre pelo projeto <strong>"Academia de Finanças"</strong><br>
+        3️⃣ Escolha a unidade TEIA e o horário ideais para você<br><br>
+
+        A Academia de Finanças é uma clínica financeira gratuita, ou seja, você não paga para participar. 
+        Nela, você vai aprender sobre planejamento financeiro eficiente e saudável, boas práticas para pequenos negócios e gestão financeira para aumentar a competitividade. 
+        Os atendimentos são personalizados para que você possa aplicar estratégias específicas ao seu negócio.<br><br>
+
+        Esperamos você lá!<br><br>
+        Atenciosamente,<br>
+        <strong>Equipe ADE SAMPA | Academia de Finanças</strong>
+      `;
+
+      MailApp.sendEmail({
+        to: email,
+        subject: "Convite: Academia de Finanças",
+        htmlBody: mensagem
+      });
+
+      sheet.getRange(i + 1, enviadoIndex + 1).setValue("SIM");
+      Logger.log("Enviado para: " + nome + " - " + email);
+      enviadosHoje++;
+    }
+  }
+
+  Logger.log("Total de e-mails enviados: " + enviadosHoje);
+}
